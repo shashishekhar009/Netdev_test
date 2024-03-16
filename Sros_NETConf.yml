@@ -28,3 +28,7 @@
       debug:
       var: python_interpreter.stdout
 
+    - name: Print Python interpreter
+      debug:
+      var: python_interpreter.stdout
+
