@@ -6,15 +6,3 @@ sros_l3 = {
     'username': 'admin',         # Replace with your username
     'password': 'admin'        # Replace with your password
 }
-
-net_connect = ConnectHandler(**sros_l3)
-
-# Send command to show router interface details
-output = net_connect.send_command('show router interface')
-print(output)
-
-# Disconnect from the device
-net_connect.disconnect()
-
-# Disconnect from the device
-net_connect.disconnect()
