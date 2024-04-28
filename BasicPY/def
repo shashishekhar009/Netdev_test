@@ -1,0 +1,5 @@
+def num_add(a,b):
+    return a + b 
+
+output = num_add(5,6)
+print(output)
