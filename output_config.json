@@ -1,0 +1,9 @@
+{
+    "name": "Router1",
+    "interfaces": [
+        {
+            "name": "Gig0/1",
+            "ip": "192.168.1.1"
+        }
+    ]
+}

@@ -20,9 +20,7 @@ def Device():
 
         # Disconnect from the device
         Net_connect.disconnect()
-
-        print(f"hey--------------------------------------------------------")
-
+        
     except Exception as e:
         print(f"An error occurred: {e}")
 

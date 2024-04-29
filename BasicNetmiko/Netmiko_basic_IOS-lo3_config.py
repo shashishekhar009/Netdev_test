@@ -1,19 +1,28 @@
 from netmiko import ConnectHandler
 from getpass import getpass
 
-Device1 = {
-    'ip' : '192.168.234.132',
-    'device_type' : "cisco_ios",
-    'username' : 'shashi',
-    'password' : getpass()
+# Device details
+device_ios = { 
+    "device_type": "cisco_ios",
+    "ip": "192.168.234.132",
+    "username": "shashi",
+    "password": getpass("Enter password: "),
 }
 
-Net_connect = ConnectHandler(**Device1)
+# Connect to the device
+net_connect = ConnectHandler(**device_ios)
 
-commands = [ 'interface loopback3', 'ip address 3.3.3.3 255.255.255.255']
+# Configuration commands
+config_commands = [
+    'interface Loopback3',
+    'ip address 3.3.3.3 255.255.255.255'
+]
 
-output = Net_connect.send_config_set(commands)
+# Send configuration commands
+output = net_connect.send_config_set(config_commands)
 
+# Print the output
 print(output)
 
-Net_connect.disconnect()
+# Disconnect from the device
+net_connect.disconnect()

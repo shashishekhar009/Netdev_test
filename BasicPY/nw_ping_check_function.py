@@ -9,4 +9,6 @@ def ping_host(host):
         print(f"{host} is down!")
 
 # Using the function
-ping_host('8.8.8.8')
+ping_host('google.com')
+
+# check with Su access

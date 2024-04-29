@@ -1,0 +1,11 @@
+router:
+    hostname: Router2
+    interfaces:
+    -   description: Primary interface
+        interface: GigabitEthernet0/1
+        ip_address: 192.168.10.1
+        subnet_mask: 255.255.255.0
+    -   description: Secondary interface
+        interface: GigabitEthernet0/2
+        ip_address: 192.168.2.1
+        subnet_mask: 255.255.255.0

@@ -1,8 +1,10 @@
-def febo(fe):
-    if fe <= 1:
-        return fe
+def fibonacci(n):
+    if n <= 1:
+        return n
     else:
-        return febo(n-1) + febo(n-2)
-    
+        return fibonacci(n-1) + fibonacci(n-2)
+
+# Print the first 10 Fibonacci numbers
 for i in range(10):
-    print(i)
+    print(fibonacci(i))
+# Output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
